@@ -12,7 +12,7 @@ import reactor.core.publisher.Mono;
 public class EmployeeController {
 
     @GetMapping("/{employeeId}")
-    public Mono<Employee> submitOrder(@PathVariable Long employeeId) {
+    public Mono<Employee> getEmployee(@PathVariable Long employeeId) {
         throw new UnsupportedOperationException();
     }
 
