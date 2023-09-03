@@ -7,8 +7,8 @@ public class HourlyEmployee extends Employee {
     public HourlyEmployee() {
     }
 
-    public HourlyEmployee(Long employeeId, double hourlyRate, double hoursWorked) {
-        super(employeeId);
+    public HourlyEmployee(Long employeeId, String email, String personnelNumber, double hourlyRate, double hoursWorked) {
+        super(employeeId, email, personnelNumber);
         this.hourlyRate = hourlyRate;
         this.hoursWorked = hoursWorked;
     }

@@ -50,16 +50,20 @@ class EmployeeJsonTest {
 
     private static Stream<Arguments> employeeJsonTestCases() {
         return Stream.of(
-                arguments(new FullTimeEmployee(1L, 1012.32), """
+                arguments(new FullTimeEmployee(1L, "zarinfam.s@gmail.com", "12-321", 1012.32), """
                         {
                              "employeeId": 1,
+                             "email": "zarinfam.s@gmail.com",
+                             "personnelNumber": "12-321",
                              "salary": 1012.32,
                              "type": "fulltime"
                         }
                         """),
-                arguments(new HourlyEmployee(2L, 1000.0, 160), """
+                arguments(new HourlyEmployee(2L, "saeed.zarinfam@gmail.com", "12-322", 1000.0, 160), """
                         {
                              "employeeId": 2,
+                             "email": "saeed.zarinfam@gmail.com",
+                             "personnelNumber": "12-322",
                              "hourlyRate": 1000.0,
                              "hoursWorked": 160,
                              "type": "hourly"

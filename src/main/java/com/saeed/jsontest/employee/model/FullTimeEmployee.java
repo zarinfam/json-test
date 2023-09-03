@@ -6,8 +6,8 @@ public class FullTimeEmployee extends Employee {
     public FullTimeEmployee() {
     }
 
-    public FullTimeEmployee(Long employeeId, double salary) {
-        super(employeeId);
+    public FullTimeEmployee(Long employeeId, String email, String personnelNumber, double salary) {
+        super(employeeId, email, personnelNumber);
         this.salary = salary;
     }
 
